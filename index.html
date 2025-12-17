@@ -4,22 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>FPRE Test</title>
+
+  <style>
+      h1 {
+          text-align: center;
+      }
+
+      .widget-container {
+          min-width: 100vw;
+          display: flex;
+          flex-direction: column;
+          justify-self: center;
+
+          @media (min-width: 768px) {
+              min-width: 50vw;
+          }
+      }
+  </style>
 </head>
 <body>
 
 <h1>Muster Immobilien AG</h1>
 
-<h2>New</h2>
-<script src="//fpre-new-develop.renuoapp.ch/scripts/fpre-widget.min.js"></script>
-<style>#widget-schnellbewertung-new {width: 1px; min-width: 100%; border: none;}</style>
-<iframe id="widget-schnellbewertung-new" src="//fpre-new-develop.renuoapp.ch/widget/nrRd5e2KW7J60CMlsoe274dMv47SHetp" scrolling="no" frameborder="none"></iframe>
-<script>initFpreWidget("#widget-schnellbewertung-new")</script>
+<div class="widget-container">
+  <h2>New</h2>
+  <script src="//fpre-new-develop.renuoapp.ch/scripts/fpre-widget.min.js"></script>
+  <style>#widget-schnellbewertung-new {width: 1px; min-width: 100%; border: none;}</style>
+  <iframe id="widget-schnellbewertung-new" src="//fpre-new-develop.renuoapp.ch/widget/nrRd5e2KW7J60CMlsoe274dMv47SHetp" scrolling="no" frameborder="none"></iframe>
+  <script>initFpreWidget("#widget-schnellbewertung-new")</script>
 
-<h2>Old</h2>
-<script src="//fpre-develop.renuoapp.ch/scripts/fpre-widget.min.js"></script>
-<style>#widget-schnellbewertung-old {width: 1px; min-width: 100%; border: none;}</style>
-<iframe id="widget-schnellbewertung-old" src="//fpre-develop.renuoapp.ch/widget/nrRd5e2KW7J60CMlsoe274dMv47SHetp" scrolling="no" frameborder="none"></iframe>
-<script>initFpreWidget("#widget-schnellbewertung-old")</script>
+  <h2>Old</h2>
+  <script src="//fpre-develop.renuoapp.ch/scripts/fpre-widget.min.js"></script>
+  <style>#widget-schnellbewertung-old {width: 1px; min-width: 100%; border: none;}</style>
+  <iframe id="widget-schnellbewertung-old" src="//fpre-develop.renuoapp.ch/widget/nrRd5e2KW7J60CMlsoe274dMv47SHetp" scrolling="no" frameborder="none"></iframe>
+  <script>initFpreWidget("#widget-schnellbewertung-old")</script>
+</div>
 
 </body>
 </html>
